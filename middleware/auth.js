@@ -13,7 +13,7 @@ module.exports = function (req, res, next) {
   //* Valdiar Token
 
   try {
-    const cifrado = jwt.verify(token, process.env.SECRET);
+    const cifrado = jwt.verify(token, process.env.SECRETJWT);
 
     //? Es cifrado.usuario ya que cuando se Agrega un  Nuevo usuario al payload le pasamos el usuario
     //* Esto va a generar un nuevo objeto que es req.usuario el cual con este vamos a poder extraer su id
