@@ -1,1 +1,5 @@
-node_module
+# Node packages
+**/node_modules/
+
+# Env vars
+*.env
